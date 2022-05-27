@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval & Set Time Out</title>
+    <style>
+        .container {
+            width: auto;
+            margin: auto;
+            /* border: 2px solid; */
+        }
+
+        #heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid red; */
+        }
+
+        #time1 {
+            display: block;
+            padding: 3px 8px;
+            margin: auto;
+            width: 418px;
+            margin-bottom: 0.67rem;
+            /* border: 2px solid blue; */
+        }
+        #time2 {
+            display: block;
+            padding: 3px 8px;
+            margin: auto;
+            width: 418px;
+            margin-bottom: 0.67rem;
+            /* border: 2px solid blue; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading">Time Now is</h1><span id="time1"></span>
+        <span id="time2"></span>
+    </div>
+</body>
+<script>
+    // function greet(name, byeText) {
+    //     console.log(`Hello good morning ${name} ${byeText}`);
+    // }
+    // interval = setInterval(greet, 1000,'Harry','Good Night');
+    // console.log(interval);
+    // clearInterval(interval);
+    function displayTime() {
+       let time1 = new Date();
+        console.log(time1);
+        document.getElementById('time1').innerHTML = time1;
+    }
+    setInterval(displayTime, 1000);
+
+    //Display time in another way
+
+    
+    function updateTime() {
+        let time2 = document.getElementById('time2');
+        time2.innerHTML = new Date();
+    }
+    setInterval(updateTime, 1000);
+
+
+</script>
+
+</html>

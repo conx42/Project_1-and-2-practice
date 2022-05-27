@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON in Java Script</title>
+</head>
+<body>
+    <script>
+        let jsonObj = {
+            name: "Harry",
+            channel: "CWH",
+            friend: "Rohan Das",
+            food: "Bhindi" 
+        }
+        console.log(jsonObj);
+
+        //ebar object taa ke stringify korchi
+        let my_Json_Str = JSON.stringify(jsonObj);
+        console.log(my_Json_Str);
+
+        //ebar Replace korchi 2to string
+        my_Json_Str = my_Json_Str.replace('Harry', 'Larry');
+        console.log(my_Json_Str);
+
+        //ebar JSON.parse() function er sahajje stringify content gulo keey abar Object ee convert korbo
+        newJsonObj = JSON.parse(my_Json_Str);
+        console.log(newJsonObj);
+
+    </script>
+</body>
+</html>

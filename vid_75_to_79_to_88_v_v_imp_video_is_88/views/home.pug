@@ -1,0 +1,46 @@
+extends base.pug
+
+block scripts 
+    script(src= '/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css 
+
+block content
+    section#introSection 
+        h1 Welcome to Your DataBases Website!!! 
+        h3 Where we provide you The best Cloud Based DataBase as per your requirements!!! 
+    section#missionSection
+        h2 Our Mission
+        div.card 
+            h3 Easy to use
+            div.card-box 
+                div.card-img 
+                    img(src="../static/All_images/l9.png", alt="")
+                    
+                div.card-content
+                    p This is the best backend in the universe
+        div.card 
+            h3 Easy to use
+            div.card-box 
+                div.card-img 
+                    img(src="../static/All_images/django.png", alt="")
+                    
+                div.card-content
+                    p This is the best backend in the universe 
+        div.card 
+            h3 Easy to use
+            div.card-box 
+                div.card-img 
+                    img(src="../static/All_images/php1.png", alt="")
+                    
+                div.card-content
+                    p This is the best backend in the universe 
+    section#DataBaseSection
+        h2 Our DataBases!!!
+        div#databases
+            img(src="../static/All_images/1.png", alt="", class="spImage")
+            img(src="../static/All_images/2.png", alt="", class="spImage")
+            img(src="../static/All_images/3.png", alt="", class="spImage")
+            img(src="../static/All_images/4.png", alt="", class="spImage")

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js_50 | Strings</title>
+</head>
+<body>
+    <script>
+        var test = "This is a String";
+        console.log(test);
+        //first occurance of a substring
+        console.log(test.indexOf('is'));
+        //Last occurance of a substring
+        console.log(test.lastIndexOf('is'));
+        //Substring from a string
+        console.log(test.slice(1,11)); // ektaa index agey obdhi print korey.. maney ekhaney Index 10 obdhi ee print korbey
+        // Alternative process of sliceing
+        console.log(test.substring(1,12)); // same kaaj korbey [ .slice(1,12) rr motooon].
+
+        //Replace function 
+        console.log(test.replace('String','Harry'));
+
+        //Kichu mijar jinis
+
+        console.log(test[13]);
+        console.log(test[8]);
+        console.log(test[0]);
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

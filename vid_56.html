@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>More About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="container">
+        Another Container.
+    </div>
+</body>
+<script>
+    // document.getElementById("");
+    let zico = document.getElementById('main');
+    console.log(zico);
+    let zicooo = document.getElementById('nav');
+    console.log(zicooo);
+    // document.getElementsByClassName("");
+    let Double_class = document.getElementsByClassName('container');
+    console.log(Double_class);
+    // querySelector --> eta sudhu id = nav err 1st <li> tag taa select hobe 
+    let sel = document.querySelector("#nav>li");
+    console.log(sel);
+    // querySelectorAll --> eta nav id rrrr vitor err somosto li tag gulo key select kore nebey
+    let sel_1 = document.querySelectorAll("#nav>li");
+    console.log(sel_1);
+</script>
+
+</html>

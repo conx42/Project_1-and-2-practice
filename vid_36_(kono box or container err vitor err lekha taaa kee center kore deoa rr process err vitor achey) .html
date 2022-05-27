@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations and Keyframes</title>
+    <style>
+        .container {
+            background-color: rgb(232, 100, 255);
+            
+        }
+
+        .box {
+            display: flex;
+            /*justify-content & align-items 2to eksathe likhley tobey lekha ta center hocche*/
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(118, 250, 255);
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            /* animation-name: harry1; */
+            animation-name: harry2;
+            animation-duration: 3.3s;
+            animation-iteration-count: infinite;
+            /*
+             animation-fill-mode:alternate;*/
+            /* animation-fill-mode:forwards;   */
+
+            /* animation-timing-function: ease-in; */
+
+            /* animation-delay: 2s; */
+
+            /* animation-direction: reverse; */
+
+            /* short hand property of animation written down below */
+            /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+        }
+
+        @keyframes harry1 {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 1200px;
+            }
+        }
+
+        @keyframes harry2 {
+            0% {
+                top: 0px;
+                left: 0px;
+                box-shadow: 10px 13px 110px 54px rgb(229, 255, 0);
+                box-shadow: -10px -20px 110px 54px rgb(251, 255, 0);
+                border-radius: 20px;
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;
+                box-shadow: 10px 20px 110px 54px rgb(255, 0, 179);
+                box-shadow: -10px -20px 110px 54px rgb(255, 0, 191);
+                border-radius: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 22px;
+                font-weight: bold;
+                
+            }
+
+            50% {
+                top: 250px;
+                left: 250px;
+                box-shadow: 10px 13px 110px 54px rgb(0, 217, 255);
+                box-shadow: -10px -20px 110px 54px rgb(17, 255, 203);
+                border-radius: 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 20px;
+            }
+            75%{
+                top: 0px;
+                left: 250px;
+                box-shadow: 10px 13px 110px 54px rgb(51, 255, 0);
+                box-shadow: -10px -20px 110px 54px rgb(51, 255, 0);
+                border-radius: 20px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 30px;
+                color: tomato;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+                box-shadow: 10px 13px 110px 54px rgb(255, 123, 0);
+                box-shadow: -10px -20px 110px 54px rgb(255, 153, 0);
+                border-radius: 20px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: bold;
+                font-style: italic;
+                font-size: 30px;
+                
+            }
+        } 
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keyframes and Animations</title>
+</head>
+<style>
+    .container {
+        background-color: greenyellow;
+    }
+
+    .box {
+        background-color: green;
+        width: 250px;
+        height: 250px;
+        position: relative;
+        /* animation-name: harry1; */
+        animation-name: harry2;
+        animation-duration: 8s;
+        animation-iteration-count: 1;
+        /* animation-fill-mode: alternate; */
+        /* animation-timing-function: ease-in-out; */
+        /* animation-delay: 3s; */
+        /* animation-direction: reverse;  */
+
+        /* These properties can be set using this shorthand */
+        /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+        /* animation: harry 5s ease-in 1s 12 backwards; */
+
+    }
+
+    @keyframes harry2 {
+        0%{
+            top:0px;
+            left:0px;
+        }
+        25%{
+            top: 250px;
+            left: 0px;
+        }
+        75%{
+            top: 250px;
+            left: 250px;
+        }
+        100%{
+            top: 0px;
+            left: 250px;
+        }
+        
+    }
+    @keyframes harry1 {
+        from {
+            width: 200px;
+        }
+
+        to {
+            width: 1400px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+
+</html> -->

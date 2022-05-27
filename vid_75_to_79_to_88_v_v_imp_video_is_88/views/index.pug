@@ -1,0 +1,69 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=Island+Moments&display=swap" rel="stylesheet">
+        title DataBases
+        style 
+          include ../static/style.css
+    body
+        header
+            div.box1
+                img(src="../static/All_images/images.jpg", alt="logo2")
+                h3 Menu 
+            div.box2
+                img(src="../static/All_images/las1.jpg", alt="logo2")
+
+        nav#navbar 
+            ul 
+                li #[a(href= "/") Home]
+                li #[a(href= "/") Database Info]
+                li #[a(href= "/") D.B Packages ]
+                li #[a(href= "/") Services]
+                li #[a(href= "/") About Us]
+                li #[a(href= "/") Contact Us]
+        section#introSection 
+            h1 Welcome to Your DataBases Website!!! 
+            h3 Where we provide you The best Cloud Based DataBase as per your requirements!!! 
+        section#missionSection
+            h2 Our Mission
+            div.card 
+                h3 Easy to use
+                div.card-box 
+                    div.card-img 
+                        img(src="../static/All_images/l9.png", alt="")
+                    
+                    div.card-content
+                        p This is the best backend in the universe
+            div.card 
+                h3 Easy to use
+                div.card-box 
+                    div.card-img 
+                        img(src="../static/All_images/django.png", alt="")
+                    
+                    div.card-content
+                        p This is the best backend in the universe 
+            div.card 
+                h3 Easy to use
+                div.card-box 
+                    div.card-img 
+                        img(src="../static/All_images/php1.png", alt="")
+                    
+                    div.card-content
+                        p This is the best backend in the universe 
+        section#DataBaseSection
+            h2 Our DataBases!!!
+            div#databases
+                img(src="../static/All_images/1.png", alt="", class="spImage")
+                img(src="../static/All_images/2.png", alt="", class="spImage")
+                img(src="../static/All_images/3.png", alt="", class="spImage")
+                img(src="../static/All_images/4.png", alt="", class="spImage")
+        footer#footer
+            | Copyright 2019 © Zico Data Bases | All Rights Reserved 
+
+        script 
+          include ../static/index.js

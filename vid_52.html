@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects and Arrays in Java Script</title>
+</head>
+<body>
+    <script>
+        //This is an object
+        //I constructed an object named as employee
+        let employee = {
+            name: "Sangramjit Roy",
+            salary: 10,
+            channel: `CodeWithHarry`,
+            channel1: 'Kaise mujhe tum milgaye',
+        }
+        console.log(employee);
+        
+        //I constructed an array named as names
+        let names = [1,2,3,4, 'Sangram', undefined];
+        console.log(names);
+        console.log(names.length);
+        //Anopther way to construct an array
+        let KathyMarshall = new Array(88,54,33,1,90,'Lag jaa gale','ki phir yaaaeee');
+        console.log(KathyMarshall);
+        console.log(KathyMarshall.sort());
+        console.log(KathyMarshall.length);
+        KathyMarshall.push("Gand marao Bhosdk")
+        console.log(KathyMarshall);
+        console.log('\n\n\n');
+        let lastArray = new Array(23)
+        lastArray.push("Gand marao Bhosdk")
+        console.log(lastArray);
+    </script>
+</body>
+</html>

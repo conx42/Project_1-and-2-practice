@@ -1,0 +1,22 @@
+{
+  "name": "vid_69",
+  "version": "1.0.0",
+  "description": "Harry rr Video 69 aa backend nodeJs sikhchi",
+  "main": "vid_69.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "awesome"
+  ],
+  "author": "Zico",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "express": "^4.17.2",
+    "slugify": "^1.6.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,27 @@
+//- layout.pug
+doctype html 
+html
+  head
+    //- title My Site - #{title}
+    title Zico DataBases 
+    block style 
+    block scripts
+  body
+    header
+      div.box1
+        img(src="../static/All_images/images.jpg", alt="logo2")
+        h3 Menu 
+      div.box2
+        img(src="../static/All_images/las1.jpg", alt="logo2")
+
+    nav#navbar 
+      ul 
+        li #[a(href= "/") Home]
+        li #[a(href= "/") Database Info]
+        li #[a(href= "/") D.B Packages ]
+        li #[a(href= "/") Services]
+        li #[a(href= "/") About Us]
+        li #[a(href= "/contact") Contact Us]
+    block content
+    footer#footer
+      | Copyright 2019 © Zico Data Bases | All Rights Reserved 

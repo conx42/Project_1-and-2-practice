@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings | Strings Methods</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptates non assumenda nam vel qui temporibus quas amet at voluptatibus fugit sapiente ex quia ratione sed, facilis ullam et molestias suscipit doloremque illo? Non!</p>
+    </div>
+    <script>
+        // var string = 'Thi"s';
+        // var name = 'Harry';
+        // var channel = 'CodeWithHarry';
+        // var message = 'Harry is a good boy';
+        // var temp = `${name} is a 'nice' person "and" has a channel called ${channel}`;
+        // console.log(string);
+        // console.log(name);
+        // console.log(channel);
+        // console.log(message);
+        // console.log(temp);
+        // var len1 = name.length;
+        // console.log(`Length of name is ${len1}`);
+        // console.log(channel.length);
+        // console.log(message.length);
+        // console.log(temp.length);
+        var string = new String('Thi"s');
+        var name = new String('Harry');
+        var channel = new String('CodeWithHarry');
+        var message = new String('Harry is a good boy');
+        var temp = new String(`${name} is a 'nice' person "and" has a channel called ${channel}`);
+        console.log(string);
+        console.log(name);
+        console.log(channel);
+        console.log(message);
+        console.log(temp);
+
+        document.getElementById('content').innerHTML = "<h3>This is an h3 heading</h3>";
+    </script>
+</body>
+</html>
